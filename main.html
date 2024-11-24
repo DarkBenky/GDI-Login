@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('26108.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            width: 400px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-title {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .login-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        .input-group input:focus {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .input-group input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+
+        .remember-me input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .sign-in-btn {
+            width: 100%;
+            padding: 12px;
+            background: #2196F3;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .sign-in-btn:hover {
+            background: #1976D2;
+        }
+
+        .social-login {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .google-btn {
+            background: #4285F4;
+        }
+
+        .facebook-btn {
+            background: #1877F2;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .forgot-password a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .sign-up {
+            text-align: center;
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+
+        .sign-up a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="login-title">Sign in</h1>
+        <p class="login-subtitle">Enter your alternative login and we will send you a login link.</p>
+        
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Your Email" value="karen.park@outlook.com">
+            </div>
+            
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+            
+            <label class="remember-me">
+                <input type="checkbox"> Keep me signed in
+            </label>
+            
+            <button type="submit" class="sign-in-btn">Sign in</button>
+            
+            <div class="social-login">
+                <button type="button" class="social-btn google-btn">Sign in with Google</button>
+                <button type="button" class="social-btn facebook-btn">Sign in with Facebook</button>
+            </div>
+            
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            
+            <div class="sign-up">
+                Don't have an account? <a href="#">Contact us</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
